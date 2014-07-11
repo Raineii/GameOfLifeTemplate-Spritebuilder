@@ -38,7 +38,7 @@
 }
 
 -(void) play{
-    //this tells the game to call a method called "step" every half of a second
+    //This tells the game to call a method called "step" every half of a second
     [self schedule:@selector(step) interval:0.5f];
 }
 
@@ -46,7 +46,7 @@
     [self unschedule:@selector(step)];
 }
 
-//this method will get called every half of a second when you hit 'play' and will stop each time you hit 'pause'
+//This method will get called every half of a second when you hit 'play' and will stop each time you hit 'pause'
 -(void) step{
     
     [_grid evolveStep];
