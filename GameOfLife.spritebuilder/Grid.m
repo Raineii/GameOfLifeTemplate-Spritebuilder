@@ -68,7 +68,7 @@ static const int GRID_COLUMNS = 10;
             
             //Make creatures visible to test this method. Remove once we know we've filled the grid properly.
             
-            creature.isAlive = YES;
+            //creature.isAlive = YES;
             
             x += _cellWidth; //Increase 'x' after each cell
             
@@ -106,7 +106,7 @@ static const int GRID_COLUMNS = 10;
     [self updateCreatures];
     
     //update the generation for the label text to display the correct generation
-    _generation++;
+    self.generation++;
 }
 
 -(void)countNeighbors{
